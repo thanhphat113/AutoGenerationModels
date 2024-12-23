@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AutoGenerationModels</id>
+    <version>1.0.0</version>
+    <authors>AutoGenerationModels</authors>
+    <description>Package Description</description>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <repository type="git" />
+  </metadata>
+  <files>
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/DotnetToolSettings.xml" target="tools/net8.0/any/DotnetToolSettings.xml" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/AutoGenerationModels.dll" target="tools/net8.0/any/AutoGenerationModels.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/AutoGenerationModels.deps.json" target="tools/net8.0/any/AutoGenerationModels.deps.json" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/AutoGenerationModels.runtimeconfig.json" target="tools/net8.0/any/AutoGenerationModels.runtimeconfig.json" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/AutoGenerationModels.pdb" target="tools/net8.0/any/AutoGenerationModels.pdb" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Azure.Core.dll" target="tools/net8.0/any/Azure.Core.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Azure.Identity.dll" target="tools/net8.0/any/Azure.Identity.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Dapper.dll" target="tools/net8.0/any/Dapper.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.Bcl.AsyncInterfaces.dll" target="tools/net8.0/any/Microsoft.Bcl.AsyncInterfaces.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.Data.SqlClient.dll" target="tools/net8.0/any/Microsoft.Data.SqlClient.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.Identity.Client.dll" target="tools/net8.0/any/Microsoft.Identity.Client.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.Identity.Client.Extensions.Msal.dll" target="tools/net8.0/any/Microsoft.Identity.Client.Extensions.Msal.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.IdentityModel.Abstractions.dll" target="tools/net8.0/any/Microsoft.IdentityModel.Abstractions.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.IdentityModel.JsonWebTokens.dll" target="tools/net8.0/any/Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.IdentityModel.Logging.dll" target="tools/net8.0/any/Microsoft.IdentityModel.Logging.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.IdentityModel.Protocols.dll" target="tools/net8.0/any/Microsoft.IdentityModel.Protocols.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" target="tools/net8.0/any/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.IdentityModel.Tokens.dll" target="tools/net8.0/any/Microsoft.IdentityModel.Tokens.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Microsoft.SqlServer.Server.dll" target="tools/net8.0/any/Microsoft.SqlServer.Server.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/Spectre.Console.dll" target="tools/net8.0/any/Spectre.Console.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.ClientModel.dll" target="tools/net8.0/any/System.ClientModel.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.Configuration.ConfigurationManager.dll" target="tools/net8.0/any/System.Configuration.ConfigurationManager.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.Diagnostics.EventLog.dll" target="tools/net8.0/any/System.Diagnostics.EventLog.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.IdentityModel.Tokens.Jwt.dll" target="tools/net8.0/any/System.IdentityModel.Tokens.Jwt.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.Memory.Data.dll" target="tools/net8.0/any/System.Memory.Data.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.Runtime.Caching.dll" target="tools/net8.0/any/System.Runtime.Caching.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/System.Security.Cryptography.ProtectedData.dll" target="tools/net8.0/any/System.Security.Cryptography.ProtectedData.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/de/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/de/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/es/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/es/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/fr/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/fr/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/it/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/it/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/ja/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/ja/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/ko/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/ko/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/pt-BR/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/pt-BR/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/ru/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/ru/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/zh-Hans/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/zh-Hans/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/zh-Hant/Microsoft.Data.SqlClient.resources.dll" target="tools/net8.0/any/zh-Hant/Microsoft.Data.SqlClient.resources.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll" target="tools/net8.0/any/runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll" target="tools/net8.0/any/runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll" target="tools/net8.0/any/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll" target="tools/net8.0/any/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win/lib/net8.0/System.Runtime.Caching.dll" target="tools/net8.0/any/runtimes/win/lib/net8.0/System.Runtime.Caching.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" target="tools/net8.0/any/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" target="tools/net8.0/any/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" target="tools/net8.0/any/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" />
+    <file src="/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/bin/Release/net8.0/publish/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" target="tools/net8.0/any/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" />
+  </files>
+</package>
