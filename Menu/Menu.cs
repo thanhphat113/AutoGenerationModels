@@ -30,6 +30,16 @@ namespace AutoGenerationModels.Menu
 				}
 			}
 
+			var output = AnsiConsole.Ask<string>("[bold blue]Please enter the folder path you wish to save.Example: Models or Models/example/... ( or \"Exit\" to return):[/]");
+
+			if (output.Equals("Exit", StringComparison.OrdinalIgnoreCase))
+			{
+				AnsiConsole.MarkupLine("[bold red]Exiting the program... Goodbye![/]");
+				return;
+			}
+
+			AnsiConsole.MarkupLine("[bold green]Output directory selected successfully![/]");
+
 			while (true)
 			{
 				var MainChoice = AnsiConsole.Prompt(
@@ -43,26 +53,26 @@ namespace AutoGenerationModels.Menu
 
 				HandleExitOrBack(MainChoice);
 
-				SubMenu(MainChoice, connectionString);
+				SubMenu(MainChoice, connectionString, output);
 			}
 		}
 
-		public static void SubMenu(string name, string connectionString)
+		public static void SubMenu(string name, string connectionString, string output)
 		{
 			var actions = new Dictionary<string, Dictionary<string, Action>>{
 				{
 					"Store Procedure",
 					new Dictionary<string, Action>
 					{
-						{ "All", () => Store.GenerateModelFromProcedure(connectionString) },
-						{ "Detail", () => Store.GenerateDetailModelFromProcedure(connectionString)}
+						{ "All", () => Store.GenerateModelFromProcedure(connectionString, output) },
+						{ "Detail", () => Store.GenerateDetailModelFromProcedure(connectionString, output)}
 					}
 				},
 				{
 					"Function Table", new Dictionary<string, Action>
 					{
-						{ "All", () => TVFunction.GenerateModelFromTVF(connectionString) },
-						{ "Detail", () => TVFunction.GenerateDetailModelFromTVF(connectionString)}
+						{ "All", () => TVFunction.GenerateModelFromTVF(connectionString, output) },
+						{ "Detail", () => TVFunction.GenerateDetailModelFromTVF(connectionString, output)}
 					}
 				}
 			};

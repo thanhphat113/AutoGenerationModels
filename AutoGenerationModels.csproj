@@ -1,11 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Version>1.0.2</Version>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>Ly Thanh Phat</Authors>
+    <Owners>Ly Thanh Phat</Owners>
+    <PackageId>AutoGenerationModels</PackageId>
+    <RepositoryUrl>https://github.com/thanhphat113/AutoGenerationModels</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>This tool generates C# models from stored procedures and table-valued functions in SQL Server.</Description>
+    <Tags>model generation, stored procedures, table-valued functions, SQL Server</Tags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>store</ToolCommandName>
+    <ToolCommandName>AutoGenerationModels</ToolCommandName>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -14,5 +24,10 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Include="Spectre.Console" Version="0.49.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="./README.md" Pack="true" PackagePath="/"/>
+  </ItemGroup>
+
 
 </Project>

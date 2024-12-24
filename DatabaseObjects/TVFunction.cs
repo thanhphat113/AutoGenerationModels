@@ -12,7 +12,7 @@ namespace AutoGenerationModels.DatabaseObjects
 {
 	public static class TVFunction
 	{
-		public static void GenerateDetailModelFromTVF(string connectionString)
+		public static void GenerateDetailModelFromTVF(string connectionString, string output)
 		{
 			try
 			{
@@ -24,7 +24,7 @@ namespace AutoGenerationModels.DatabaseObjects
 					var list = Generation.ShowList(storedProcedures);
 					if (list == null) return;
 
-					GenerateModelFromTVF(connectionString, list);
+					GenerateModelFromTVF(connectionString, output, list);
 				}
 			}
 			catch (SqlException sqlEx)
@@ -41,18 +41,10 @@ namespace AutoGenerationModels.DatabaseObjects
 			}
 		}
 
-		public static void GenerateModelFromTVF(string connectionString, IEnumerable<string>? functionNames = null)
+		public static void GenerateModelFromTVF(string connectionString, string output, IEnumerable<string>? functionNames = null)
 		{
 			try
 			{
-				string output;
-				output = AnsiConsole.Ask<string>("[bold blue]Please enter the folder path you wish to save. Example: Models or Models/example/... ( or \"Back\" to return):[/]");
-
-				if (output.Equals("Back", StringComparison.OrdinalIgnoreCase))
-				{
-					return;
-				}
-
 				using (var connection = new SqlConnection(connectionString))
 				{
 					connection.Open();

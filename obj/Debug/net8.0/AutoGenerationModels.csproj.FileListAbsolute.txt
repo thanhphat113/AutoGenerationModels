@@ -49,6 +49,7 @@
 /Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/AutoGenerationModels.AssemblyInfoInputs.cache
 /Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/AutoGenerationModels.AssemblyInfo.cs
 /Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/AutoGenerationModels.csproj.CoreCompileInputs.cache
+/Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/AutoGenerationModels.sourcelink.json
 /Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/AutoGene.EB31A438.Up2Date
 /Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/AutoGenerationModels.dll
 /Users/lythanhphat9523/Desktop/DemoASP/AutoGenerationModels/obj/Debug/net8.0/refint/AutoGenerationModels.dll

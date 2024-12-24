@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "AutoGenerationModels/1.0.0": {
+      "AutoGenerationModels/1.0.2": {
         "dependencies": {
           "Dapper": "2.1.35",
           "Microsoft.Data.SqlClient": "5.2.2",
@@ -393,7 +393,7 @@
     }
   },
   "libraries": {
-    "AutoGenerationModels/1.0.0": {
+    "AutoGenerationModels/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

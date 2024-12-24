@@ -23,7 +23,7 @@ namespace AutoGenerationModels.MiddleWare
 			classCode.AppendLine($"\tpublic class {ClassName} {{");
 			foreach (var item in list)
 			{
-				classCode.AppendLine($"\t\tpublic {item.Value} {item.Key} {{ get; set; }} {(item.Value.Equals("string") ? "= string.Empty;" : "")} ");
+				classCode.AppendLine($"\t\tpublic {item.Value}? {item.Key} {{ get; set; }}");
 			}
 			classCode.AppendLine("\t}");
 			classCode.AppendLine("}");
@@ -63,7 +63,7 @@ namespace AutoGenerationModels.MiddleWare
 				"guid" => "Guid",
 				"binary" => "byte[]",
 				"char" => "char",
-				_ => throw new ArgumentException($"Kiểu dữ liệu '{sqlType}' không được hỗ trợ.")
+				_ => throw new ArgumentException($"Data type '{sqlType}' is not supported.")
 			};
 		}
 
@@ -78,7 +78,8 @@ namespace AutoGenerationModels.MiddleWare
 				"date" => DateTime.Now.Date,
 				"datetime" => DateTime.Now,
 				"bit" => false,
-				_ => throw new ArgumentException($"Kiểu dữ liệu '{type}' không được hỗ trợ.")
+				_ => throw new ArgumentException($"Data type '{type}' is not supported.")
+
 			};
 		}
 

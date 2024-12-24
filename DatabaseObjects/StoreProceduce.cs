@@ -9,7 +9,7 @@ namespace AutoGenerationModels.DatabaseObjects
 {
 	public static class Store
 	{
-		public static void GenerateDetailModelFromProcedure(string connectionString)
+		public static void GenerateDetailModelFromProcedure(string connectionString, string output)
 		{
 			try
 			{
@@ -21,7 +21,7 @@ namespace AutoGenerationModels.DatabaseObjects
 					var list = Generation.ShowList(storedProcedures);
 					if (list == null) return;
 
-					GenerateModelFromProcedure(connectionString, list);
+					GenerateModelFromProcedure(connectionString, output, list);
 				}
 			}
 			catch (SqlException sqlEx)
@@ -38,18 +38,10 @@ namespace AutoGenerationModels.DatabaseObjects
 			}
 		}
 
-		public static void GenerateModelFromProcedure(string connectionString, IEnumerable<string>? proceduceNames = null)
+		public static void GenerateModelFromProcedure(string connectionString, string output, IEnumerable<string>? proceduceNames = null)
 		{
 			try
 			{
-				string output;
-				output = AnsiConsole.Ask<string>("[bold blue]Please enter the folder path you wish to save.Example: Models or Models/example/... ( or \"Back\" to return):[/]");
-
-				if (output.Equals("Back", StringComparison.OrdinalIgnoreCase))
-				{
-					return;
-				}
-
 				using (var connection = new SqlConnection(connectionString))
 				{
 					connection.Open();
@@ -60,7 +52,7 @@ namespace AutoGenerationModels.DatabaseObjects
 
 					foreach (var store in storedProcedures)
 					{
-						AnsiConsole.MarkupLine($"[bold yellow]Đang thực thi stored procedure: {store}[/]");
+						AnsiConsole.MarkupLine($"[bold yellow]Executing store procedure: {store}[/]");
 
 						var sqlParams = Generation.GetSqlParameters(connection, store);
 
