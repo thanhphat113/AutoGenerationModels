@@ -38,7 +38,7 @@ namespace AutoGenerationModels.DatabaseObjects
 			}
 		}
 
-		public static void GenerateModelFromProcedure(string connectionString, string output, IEnumerable<string>? proceduceNames = null)
+		public static void GenerateModelFromProcedure(string connectionString, string output, List<string>? proceduceNames = null)
 		{
 			try
 			{
@@ -46,9 +46,10 @@ namespace AutoGenerationModels.DatabaseObjects
 				{
 					connection.Open();
 
-					var storedProcedures = proceduceNames ?? connection.Query<string>(
+					var storedProcedures = (proceduceNames == null || !proceduceNames.Any()) ?
+						connection.Query<string>(
 						   "SELECT name FROM sys.objects WHERE type = 'P' ORDER BY name"
-					   );
+						) : proceduceNames;
 
 					foreach (var store in storedProcedures)
 					{

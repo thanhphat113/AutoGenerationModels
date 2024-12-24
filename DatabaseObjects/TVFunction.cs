@@ -49,9 +49,9 @@ namespace AutoGenerationModels.DatabaseObjects
 				{
 					connection.Open();
 
-					var functions = functionNames ?? connection.Query<string>(
+					var functions = (functionNames == null || !functionNames.Any()) ? connection.Query<string>(
 						   "SELECT name FROM sys.objects WHERE type IN ('FN', 'IF') ORDER BY name"
-					   );
+					   ) : functionNames;
 
 					foreach (var func in functions)
 					{

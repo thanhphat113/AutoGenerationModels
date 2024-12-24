@@ -67,19 +67,26 @@ namespace AutoGenerationModels.MiddleWare
 			};
 		}
 
-		public static object GetDefaultValue(string type)
+		public static object? GetDefaultValue(string type)
 		{
 			return type.ToLower() switch
 			{
-				"int" => 0,
+				"int" or "bigint" or "smallint" => 0,
 				"float" => 0f,
-				"nvarchar" or "varchar" => string.Empty,
+				"nvarchar" or "varchar" or "char" or "nchar" => string.Empty,
 				"decimal" => 0.0m,
 				"date" => DateTime.Now.Date,
-				"datetime" => DateTime.Now,
+				"datetime" or "datetime2" => DateTime.Now,
 				"bit" => false,
+				"text" or "ntext" => string.Empty,
+				"uniqueidentifier" => Guid.Empty,
+				"binary" or "varbinary" => new byte[0],
+				"money" or "smallmoney" => 0.0m,
+				"time" => TimeSpan.Zero,
+				"xml" => string.Empty,
+				"hierarchyid" => null,
+				"geometry" or "geography" => null,
 				_ => throw new ArgumentException($"Data type '{type}' is not supported.")
-
 			};
 		}
 
