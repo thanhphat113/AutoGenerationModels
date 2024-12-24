@@ -401,3 +401,6 @@ FodyWeavers.xsd
 
 # Ignore macOS system files
 .DS_Store
+
+bin/
+obj/
