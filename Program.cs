@@ -15,7 +15,8 @@ class Program
 	static void Main(string[] args)
 	{
 		if (args.Length == 0) Menu.MainMenu();
-		string appsettingsPath = "appsettings.json";
+
+		string appsettingsPath = "appsettings.Development.json";
 
 		if (!File.Exists(appsettingsPath))
 		{
@@ -36,7 +37,7 @@ class Program
 				Menu.MainMenu();
 			}
 
-			connectionString = connectionStrings["default"]?.ToString();
+			connectionString = connectionStrings["Connection"]?.ToString();
 
 			if (string.IsNullOrEmpty(connectionString))
 			{

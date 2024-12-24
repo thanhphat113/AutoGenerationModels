@@ -56,7 +56,7 @@ namespace AutoGenerationModels.MiddleWare
 				"decimal" => "decimal",
 				"double" => "double",
 				"float" => "float",
-				"bit" => "bool",
+				"bit" or "boolean" => "bool",
 				"datetime" => "DateTime",
 				"string" => "string",
 				"date" => "DateTime",
