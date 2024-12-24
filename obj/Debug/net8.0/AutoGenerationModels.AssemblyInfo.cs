@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("This tool generates C# models from stored procedures and table-valued functions i" +
     "n SQL Server.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+f162f69c043249cc57e49771d5be1ad977587f12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+a6e6ac1fe9f3e9ec4ddf30a1b16eb80dd0de7192")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoGenerationModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoGenerationModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]
