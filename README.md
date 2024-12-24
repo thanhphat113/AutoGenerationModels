@@ -17,11 +17,13 @@ To install this tool, you can use the NuGet package manager or the `dotnet` comm
 
 **Install Globally**
 ```bash
-dotnet tool install --global AutoGenerationModels --version 1.0.0
+dotnet tool install --global AutoGenerationModels
 ```
 
 **Install Locally**
 
 ```bash
+dotnet new tool-manifest # if you are setting up this repo
+
 dotnet tool install AutoGenerationModels --local --add-source "/path/to/your/package"
 ```
