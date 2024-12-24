@@ -25,5 +25,5 @@ dotnet tool install --global AutoGenerationModels
 ```bash
 dotnet new tool-manifest # if you are setting up this repo
 
-dotnet tool install AutoGenerationModels --local --add-source "/path/to/your/package"
+dotnet tool install --local AutoGenerationModels
 ```
