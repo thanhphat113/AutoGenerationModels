@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using Spectre.Console;
@@ -77,12 +73,12 @@ namespace AutoGenerationModels.MiddleWare
 				"decimal" => 0.0m,
 				"date" => DateTime.Now.Date,
 				"datetime" or "datetime2" => DateTime.Now,
-				"bit" => false,
+				"bit" or "boolean" => false,
 				"text" or "ntext" => string.Empty,
 				"uniqueidentifier" => Guid.Empty,
 				"binary" or "varbinary" => new byte[0],
 				"money" or "smallmoney" => 0.0m,
-				"time" => TimeSpan.Zero,
+				"time" or "timespan" => TimeSpan.Zero,
 				"xml" => string.Empty,
 				"hierarchyid" => null,
 				"geometry" or "geography" => null,
